@@ -1,0 +1,289 @@
+@font-face {
+    font-family: monospace;
+    font-weight: normal;
+    font-style: normal;
+    src: url('res:///fonts/normal/Dark Courier')
+    } 
+@font-face {
+    font-family: monospace;
+    font-weight: normal;
+    font-style: italic; src: url('res:///fonts/italic/Dark Courier')
+    } 
+@font-face {
+    font-family: monospace;
+    font-weight: bold; font-style:
+    normal; src: url('res:///fonts/bold/Dark Courier')
+    } 
+@font-face {
+    font-family: monospace;
+    font-weight: bold; font-style:
+    italic; src: url('res:///fonts/bolditalic/Dark Courier')
+    }
+
+code {
+    font-family: "Dark Courier", monospace;
+    }
+
+.P-P {
+    display: block;
+    font-size: 1.66667em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2em;
+    text-align: center
+    }
+.P-P1 {
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    orphans: 0;
+    text-indent: 1.5em;
+    widows: 0
+    }
+.P-P2 {
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    font-style: italic;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    orphans: 0;
+    text-indent: 1.5em;
+    widows: 0
+    }
+.P-P3 {
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    font-style: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    orphans: 0;
+    text-indent: 1.5em;
+    widows: 0
+    }
+.P-P4 {
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    orphans: 0;
+    text-indent: 1.5em;
+    widows: 0
+    }
+.P-P5 {
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    orphans: 0;
+    text-indent: 1.5em;
+    widows: 0
+    }
+.P-P6 {
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    orphans: 0;
+    text-align: left;
+    text-indent: 1.5em;
+    widows: 0
+    }
+.P-P7 {
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    orphans: 0;
+    text-indent: 1.5em;
+    widows: 0
+    }
+.S-T {
+    font-style: italic;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0
+    }
+.S-T1 {
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0
+    }
+.S-T2 {
+    font-style: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0
+    }
+.S-T3 {
+    font-size: 0.625em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    vertical-align: 33%
+    }
+.S-T4 {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0
+    }
+.S-T5 {
+    font-size: 0.625em;
+    font-style: italic;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    vertical-align: 33%
+    }
+.S-T6 {
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0
+    }
+.S-T7 {
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0
+    }
+.S-T8 {
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0
+    }
+.calibre {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-left: 5pt;
+    margin-right: 5pt;
+    margin-top: 0;
+    orphans: 0;
+    widows: 0
+    }
+.calibre1 {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 1em;
+    orphans: 0;
+    widows: 0
+    }
+.calibre2 {
+    font-weight: bold
+    }
+.calibre3 {
+    display: block
+    }
+.calibre4 {
+    font-style: italic
+    }
+.calibre5 {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0
+    }
+.calibre6 {
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-indent: 1.5em
+    }
+.calibre7 {
+    display: block;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0
+    }
+.linebreak {
+    display: block;
+    margin-bottom: 1em
+    }
+.logentry {
+    border-bottom: 0;
+    border-top: 0;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 2em;
+    orphans: 0;
+    text-indent: 0;
+    widows: 0
+    }
+.sgc-toc-level {
+    display: block;
+    margin-left: 0
+    }
+.sgc-toc-title {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center
+    }
+.synopsis {
+    display: block;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    orphans: 0;
+    text-align: left;
+    text-indent: 0;
+    widows: 0
+    }

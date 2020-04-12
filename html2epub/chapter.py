@@ -19,6 +19,7 @@ from bs4 import BeautifulSoup
 
 # Local modules
 from . import clean
+from . import style
 
 
 class NoUrlError(Exception):
@@ -239,8 +240,9 @@ class ChapterFactory():
         clean_function (Option[function]): 用于清扫要在epub中使用的原始html 的函数. 默认情况下, 这是html2epub.clean函数.
     """
 
-    def __init__(self, clean_function=clean.clean):
+    def __init__(self, clean_function=clean.clean, style_function=style.style):
         self.clean_function = clean_function
+        self.style_function = style_function
         user_agent = r'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0'
         self.request_headers = {'User-Agent': user_agent}
 
@@ -303,7 +305,9 @@ class ChapterFactory():
             Chapter: 一个Chapter对象, 其内容是给定文本的内容.
         """
         clean_html_string = self.clean_function(html_string)
-        clean_xhtml_string = clean.html_to_xhtml(clean_html_string)
+        style_html_string = self.style_function(clean_html_string)
+        clean_xhtml_string = clean.html_to_xhtml(style_html_string)
+
 
         if title:
             pass

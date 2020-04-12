@@ -50,6 +50,16 @@ class _ContainerFile():
         shutil.copy(container_template,
                     os.path.join(parent_directory, 'container.xml'))
 
+class _StyleSheet():
+    """
+    Stylesheet Directory populated with main css to be applied to all html converted files
+    """
+
+    def __init__(self, styles_directory):
+        container_template = os.path.join(
+            constants.EPUB_TEMPLATES_DIR, 'stylesheet.css')
+        shutil.copy(container_template,
+                    os.path.join(styles_directory, 'stylesheet.css'))
 
 class _EpubFile():
     """
@@ -220,6 +230,7 @@ class Epub():
             self.title, self.creator, self.language, self.rights, self.publisher, self.uid)
         self.minetype = _Mimetype(self.EPUB_DIR)
         self.container = _ContainerFile(self.META_INF_DIR)
+        self.stylesheet = _StyleSheet(self.STYLES_DIR)
 
     def _create_directories(self, epub_dir=None):
         """
@@ -233,10 +244,13 @@ class Epub():
         self.OEBPS_DIR = os.path.join(self.EPUB_DIR, 'OEBPS')
         self.META_INF_DIR = os.path.join(self.EPUB_DIR, 'META-INF')
         self.LOCAL_IMAGE_DIR = 'images'
+        self.LOCAL_STYLES_DIR = 'styles'
         self.IMAGE_DIR = os.path.join(self.OEBPS_DIR, self.LOCAL_IMAGE_DIR)
+        self.STYLES_DIR = os.path.join(self.OEBPS_DIR, self.LOCAL_STYLES_DIR)
         os.makedirs(self.OEBPS_DIR)
         os.makedirs(self.META_INF_DIR)
         os.makedirs(self.IMAGE_DIR)
+        os.makedirs(self.STYLES_DIR)
 
     def _increase_current_chapter_number(self):
         """

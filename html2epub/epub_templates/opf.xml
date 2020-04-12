@@ -12,6 +12,7 @@
   <manifest>
     <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
     <item href="toc.html" id="toc" media-type="application/xhtml+xml"/>
+    <item href="styles/stylesheet.css" id="css" media-type="text/css" />
     {% for chapter in chapters %}
     <item href="{{ chapter.link }}" id="{{ chapter.id }}" media-type="application/xhtml+xml"/>
       {% for img in chapter.imgs %}

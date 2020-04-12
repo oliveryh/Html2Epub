@@ -12,6 +12,7 @@ SUPPORTED_TAGS = {
     'br': ['id'],
     'center': [],
     'cite': [],
+    'code': [],
     'dd': ['id', 'title'],
     'del': [],
     'dfn': [],
